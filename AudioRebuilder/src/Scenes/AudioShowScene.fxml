@@ -17,7 +17,7 @@
                <HBox.margin>
                   <Insets />
                </HBox.margin></Button>
-            <Button fx:id="PlayBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#OnMusicStart" prefHeight="29.0" prefWidth="74.0" text=" ● Play">
+            <Button fx:id="PlayBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#OnMusicStart" prefHeight="29.0" prefWidth="74.0" text=" ► Play">
                <font>
                   <Font size="14.0" />
                </font>

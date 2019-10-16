@@ -3,6 +3,7 @@ package MainSceneController;
 import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
+
 import ab.AudioFile;
 import ab.AudioSelector;
 import ab.MusicBtnEventHandler;
@@ -108,9 +109,9 @@ public class AudioShowController implements Initializable{
 		ExtensionFilter wavFilter = new ExtensionFilter("Wav","*.wav");
 		ExtensionFilter musicFilter = new ExtensionFilter("Music","*.mp3","*.wav");
 		ExtensionFilter allFilter = new ExtensionFilter("All File","*.*");
+		FC.getExtensionFilters().add(musicFilter);
 		FC.getExtensionFilters().add(mp3Filter);
 		FC.getExtensionFilters().add(wavFilter);
-		FC.getExtensionFilters().add(musicFilter);
 		FC.getExtensionFilters().add(allFilter);
 		
 		File f = FC.showOpenDialog(AudioSelector.MainStage);
